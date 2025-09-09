@@ -15,7 +15,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            
+
              const response = await axios.post ('https://signup-page-backend.onrender.com/login', { email, password });
             const user = response.data;
             navigate('/home', {state: { user }});
