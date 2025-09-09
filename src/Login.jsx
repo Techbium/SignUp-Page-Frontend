@@ -16,7 +16,7 @@ const Login = () => {
         e.preventDefault();
         try {
             
-             const response = await axios.post ('http://localhost:5000/login', { email, password });
+             const response = await axios.post ('https://sign-up-page-backend.vercel.app/login', { email, password });
             const user = response.data;
             navigate('/home', {state: { user }});
                              

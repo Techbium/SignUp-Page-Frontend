@@ -15,7 +15,7 @@ const Signup = () => {
         e.preventDefault();
         try {
             console.log("Sam");
-             const response = await axios.post ('http://localhost:5000/register', {name, email, password })
+             const response = await axios.post ('https://sign-up-page-backend.vercel.app/register', {name, email, password })
                 console.log(response.data);
                 console.log("SamP");
                 navigate('/login');
